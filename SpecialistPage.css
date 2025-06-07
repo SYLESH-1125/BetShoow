@@ -1,0 +1,429 @@
+/* Clean Specialist Page Styles */
+.clean-specialist-container {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Clean Header */
+.clean-header {
+  background: #0d9488;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.clean-header-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clean-back-button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clean-back-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.clean-hospital-info {
+  flex: 1;
+}
+
+.clean-hospital-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.25rem 0;
+}
+
+.clean-location-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.clean-location-text {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Clean Search Section */
+.clean-search-section {
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clean-search-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.clean-search-input {
+  width: 100%;
+  height: 3rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  color: #374151;
+  font-size: 1rem;
+  padding: 0 3rem 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.clean-search-input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+.clean-search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  width: 1.25rem;
+  height: 1.25rem;
+  pointer-events: none;
+}
+
+.clean-filter-button {
+  background: #14b8a6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.clean-filter-button:hover {
+  background: #0d9488;
+  transform: translateY(-1px);
+}
+
+/* Clean Specialists List */
+.clean-specialists-list {
+  padding: 0 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clean-specialist-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.clean-specialist-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #14b8a6;
+}
+
+/* Doctor Avatar */
+.clean-doctor-avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f0fdfa, #eff6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+/* Doctor Info */
+.clean-doctor-info {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Name and Rating Row */
+.clean-name-rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.clean-doctor-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.clean-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.clean-rating-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Specialty Section */
+.clean-specialty-section {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.clean-specialty {
+  color: #0d9488;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.clean-education {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Stats Row */
+.clean-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.clean-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clean-stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.clean-stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.clean-stat-value {
+  font-size: 0.875rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* Languages */
+.clean-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.clean-language-badge {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Booking Row */
+.clean-booking-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.clean-fee {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.clean-fee-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.clean-fee-amount {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #059669;
+}
+
+.clean-book-button {
+  background: #14b8a6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.clean-book-button:hover {
+  background: #0d9488;
+  transform: translateY(-1px);
+}
+
+/* No Results */
+.clean-no-results {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clean-no-results-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4b5563;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.clean-no-results-text {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Utility Classes */
+.w-4 {
+  width: 1rem;
+}
+.h-4 {
+  height: 1rem;
+}
+.w-5 {
+  width: 1.25rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.w-16 {
+  width: 4rem;
+}
+.h-16 {
+  height: 4rem;
+}
+
+.text-teal-600 {
+  color: #0d9488;
+}
+.text-yellow-500 {
+  color: #eab308;
+}
+.text-blue-500 {
+  color: #3b82f6;
+}
+.text-green-500 {
+  color: #22c55e;
+}
+.text-orange-500 {
+  color: #f97316;
+}
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clean-specialist-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .clean-doctor-avatar {
+    margin: 0 auto;
+  }
+
+  .clean-stats-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .clean-booking-row {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .clean-book-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .clean-search-section {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .clean-filter-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,515 @@
+.abha-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  position: relative;
+}
+
+/* Background Elements */
+.abha-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-icon {
+  position: absolute;
+}
+
+.icon-1 {
+  top: 5rem;
+  left: 2.5rem;
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-2 {
+  top: 10rem;
+  right: 4rem;
+  opacity: 0.25;
+  animation: float-delayed 4s ease-in-out infinite;
+}
+
+.icon-3 {
+  bottom: 8rem;
+  left: 5rem;
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-4 {
+  bottom: 5rem;
+  right: 2.5rem;
+  opacity: 0.25;
+  animation: float-delayed 4s ease-in-out infinite;
+}
+
+.bubble-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.orb-1 {
+  top: 25%;
+  left: 25%;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(to right, #99f6e4, #bfdbfe);
+  opacity: 0.3;
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.orb-2 {
+  bottom: 25%;
+  right: 25%;
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(to right, #bfdbfe, #bbf7d0);
+  opacity: 0.25;
+  animation: pulse-slower 4s ease-in-out infinite;
+}
+
+.orb-3 {
+  top: 50%;
+  right: 33.333333%;
+  width: 7rem;
+  height: 7rem;
+  background: linear-gradient(to right, #e9d5ff, #fce7f3);
+  opacity: 0.2;
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.orb-4 {
+  top: 75%;
+  left: 33.333333%;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(to right, #fef3c7, #fed7aa);
+  opacity: 0.25;
+  animation: pulse-slower 4s ease-in-out infinite;
+}
+
+.orb-5 {
+  top: 16.666667%;
+  right: 16.666667%;
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(to right, #c7d2fe, #a5f3fc);
+  opacity: 0.3;
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Header Styles */
+.abha-header {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 50%, #047857 100%);
+  overflow: hidden;
+}
+
+.hex-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+}
+
+.heartbeat-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+.heartbeat-path {
+  animation: heartbeat 4s ease-in-out infinite;
+}
+
+.header-icons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.header-icon-left {
+  opacity: 0.4;
+}
+
+.heartbeat-icon {
+  animation: heartbeat-icon 3s ease-in-out infinite;
+}
+
+.header-icon-center {
+  opacity: 0.5;
+}
+
+.dna-helix {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.dna-strand-1 {
+  animation: dna-move-1 6s ease-in-out infinite;
+}
+
+.dna-strand-2 {
+  animation: dna-move-2 6s ease-in-out infinite;
+}
+
+.medical-cross {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
+}
+
+/* Content Styles */
+.abha-content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.abha-form-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.abha-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #0d9488, #2563eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fade-in 0.8s ease-out;
+}
+
+.abha-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  animation: fade-in-delayed 1s ease-out 0.2s both;
+}
+
+.abha-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: slide-up 0.6s ease-out 0.3s both;
+}
+
+.abha-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #14b8a6;
+  animation: pulse 2s infinite;
+}
+
+.input-wrapper {
+  position: relative;
+  display: group;
+}
+
+.abha-input {
+  height: 3.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  color: #374151;
+  font-size: 1.125rem;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.abha-input::placeholder {
+  color: #6b7280;
+}
+
+.abha-input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.1);
+}
+
+.abha-input:hover {
+  border-color: #5eead4;
+}
+
+.input-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, rgba(20, 184, 166, 0.1), rgba(59, 130, 246, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.input-wrapper:hover .input-overlay {
+  opacity: 1;
+}
+
+/* Button Styles */
+.abha-buttons {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  animation: fade-in-final 0.6s ease-out 0.9s both;
+}
+
+.previous-button {
+  background-color: #14b8a6;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.previous-button:hover {
+  background-color: #0d9488;
+}
+
+.get-otp-button {
+  background-color: #5eead4;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.get-otp-button:hover {
+  background-color: #2dd4bf;
+}
+
+/* Utility Classes */
+.w-6 {
+  width: 1.5rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.w-8 {
+  width: 2rem;
+}
+.h-8 {
+  height: 2rem;
+}
+.w-5 {
+  width: 1.25rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
+.w-7 {
+  width: 1.75rem;
+}
+.h-7 {
+  height: 1.75rem;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+
+.text-red-300 {
+  color: #fca5a5;
+}
+.text-teal-300 {
+  color: #5eead4;
+}
+.text-blue-300 {
+  color: #93c5fd;
+}
+.text-green-300 {
+  color: #86efac;
+}
+.text-white {
+  color: white;
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulse-slower {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    stroke-dasharray: 0, 2000;
+  }
+  50% {
+    stroke-dasharray: 2000, 0;
+  }
+}
+
+@keyframes heartbeat-icon {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes dna-move-1 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes dna-move-2 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-delayed {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-final {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

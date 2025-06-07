@@ -1,0 +1,415 @@
+/* Base Container */
+.signin-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb 0%, #eff6ff 50%, #f0fdfa 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Medical Background Pattern */
+.medical-bg-pattern {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-icon {
+  position: absolute;
+}
+
+.icon-1 {
+  top: 5rem;
+  left: 2.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-2 {
+  top: 10rem;
+  right: 4rem;
+  animation: float-delayed 4s ease-in-out infinite;
+}
+
+.icon-3 {
+  bottom: 8rem;
+  left: 5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-4 {
+  bottom: 5rem;
+  right: 2.5rem;
+  animation: float-delayed 4s ease-in-out infinite;
+}
+
+.animated-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  top: 25%;
+  left: 25%;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(to right, #99f6e4, #bfdbfe);
+  opacity: 0.2;
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.circle-2 {
+  bottom: 25%;
+  right: 25%;
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(to right, #bfdbfe, #bbf7d0);
+  opacity: 0.15;
+  animation: pulse-slower 4s ease-in-out infinite;
+}
+
+/* Header */
+.medical-header {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 50%, #047857 100%);
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.header-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+}
+
+.heartbeat-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+.heartbeat-path {
+  animation: heartbeat 4s ease-in-out infinite;
+}
+
+.header-icons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.heartbeat-icon {
+  animation: heartbeat-icon 1.5s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+/* Form */
+.signin-form {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-title-section {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.signin-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0d9488;
+  margin-bottom: 0.5rem;
+}
+
+.signin-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.field-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.dot-teal {
+  background-color: #14b8a6;
+}
+
+.dot-blue {
+  background-color: #3b82f6;
+}
+
+.dot-green {
+  background-color: #10b981;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-input {
+  height: 3.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  color: #374151;
+  font-size: 1.125rem;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: #6b7280;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.1);
+}
+
+.form-input:hover {
+  border-color: #5eead4;
+}
+
+.form-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-button {
+  position: relative;
+  background: linear-gradient(to right, #14b8a6, #0d9488);
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background: linear-gradient(to right, #0d9488, #0f766e);
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.2);
+}
+
+.next-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+.loading-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loading-spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.button-text {
+  position: relative;
+  z-index: 10;
+}
+
+/* Utility Classes */
+.w-5 {
+  width: 1.25rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.w-7 {
+  width: 1.75rem;
+}
+.h-7 {
+  height: 1.75rem;
+}
+.w-8 {
+  width: 2rem;
+}
+.h-8 {
+  height: 2rem;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+
+.text-red-300 {
+  color: #fca5a5;
+}
+.text-teal-300 {
+  color: #5eead4;
+}
+.text-blue-300 {
+  color: #93c5fd;
+}
+.text-green-300 {
+  color: #86efac;
+}
+.text-white {
+  color: white;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+.opacity-25 {
+  opacity: 0.25;
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes pulse-slower {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    stroke-dasharray: 0, 2000;
+  }
+  50% {
+    stroke-dasharray: 2000, 0;
+  }
+}
+
+@keyframes heartbeat-icon {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
